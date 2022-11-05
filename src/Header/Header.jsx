@@ -1,9 +1,19 @@
 import React, { useRef, useEffect } from "react";
 import "./header.css";
 import Typewriter from "typewriter-effect/dist/core";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import Bounce from "react-reveal/Bounce";
+
+import Nav from "./navbar/Nav";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import MobileNav from "./MobileNav/MobileNav";
 
 function Header() {
   const myH1 = useRef();
+
+  const matches = useMediaQuery("(min-width:700px)");
 
   useEffect(() => {
     let typewriter = new Typewriter(myH1.current, {
@@ -13,12 +23,13 @@ function Header() {
       cursor: ">",
     });
 
-    typewriter.typeString("<I'm Monir Osmani/").pauseFor(1000).start();
+    typewriter.pauseFor(200).typeString("<I'm Monir Osmani/").pauseFor(1000).start();
   }, []);
-
+  console.log(matches);
   return (
     <header>
       <div className="header__container">
+        {matches ? <Nav /> : <MobileNav />}
         <div className="header__content__container">
           <div className="header__circle1">
             <div className="header__circle2">
@@ -29,11 +40,25 @@ function Header() {
                       <img src="/images/profile.jpg" alt="profile" />
                       <p>Front-end developer</p>
                       <h1 ref={myH1}>I'm Monir Osmani</h1>
-                      <ul>
-                        <li>About</li>
-                        <li>Skills</li>
-                        <li>Works</li>
-                      </ul>
+                      <Bounce left>
+                        <ul>
+                          <li>
+                            <a href="https://github.com/Monir-Osman">
+                              <GitHubIcon className="icon" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.linkedin.com/in/ahmad-monir-osmani-03b148240/">
+                              <LinkedInIcon className="icon" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://twitter.com/Monir1Osmani">
+                              <TwitterIcon className="icon" />
+                            </a>
+                          </li>
+                        </ul>
+                      </Bounce>
                     </div>
                   </div>
                 </div>
