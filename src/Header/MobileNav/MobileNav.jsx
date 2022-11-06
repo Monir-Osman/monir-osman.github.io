@@ -2,20 +2,23 @@ import React, { useState } from "react";
 import "./MobileNav.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import Fade from "react-reveal/Fade";
+import Bounce from "react-reveal/Bounce";
 
 function MobileNav() {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
     <div className="mob__container">
-      <MenuIcon
-        onClick={() => setIsClicked((current) => !current)}
-        className="menu__icon"
-        sx={{ fontSize: 40 }}
-      />
+      <Bounce left>
+        <MenuIcon
+          onClick={() => setIsClicked((current) => !current)}
+          className="menu__icon"
+          sx={{ fontSize: 40 }}
+        />
+      </Bounce>
       {isClicked && (
         <Fade right>
-          <div className="mob__content">
+          <div onClick={() => setIsClicked(false)} className="mob__content">
             <ul>
               <li>
                 <a href="#home">Home</a>

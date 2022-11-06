@@ -5,15 +5,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Bounce from "react-reveal/Bounce";
-
-import Nav from "./navbar/Nav";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import MobileNav from "./MobileNav/MobileNav";
 
 function Header() {
   const myH1 = useRef();
-
-  const matches = useMediaQuery("(min-width:700px)");
 
   useEffect(() => {
     let typewriter = new Typewriter(myH1.current, {
@@ -25,11 +20,9 @@ function Header() {
 
     typewriter.pauseFor(200).typeString("<I'm Monir Osmani/").pauseFor(1000).start();
   }, []);
-  console.log(matches);
   return (
     <header>
       <div className="header__container">
-        {matches ? <Nav /> : <MobileNav />}
         <div className="header__content__container">
           <div className="header__circle1">
             <div className="header__circle2">

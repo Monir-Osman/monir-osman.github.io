@@ -1,6 +1,5 @@
 import React from "react";
 import "./nav.css";
-import LightSpeed from "react-reveal/LightSpeed";
 import Bounce from "react-reveal/Bounce";
 
 function Nav() {
