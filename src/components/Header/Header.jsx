@@ -21,7 +21,7 @@ function Header() {
     typewriter.pauseFor(200).typeString("<I'm Monir Osmani/").pauseFor(1000).start();
   }, []);
   return (
-    <header>
+    <header id="home">
       <div className="header__container">
         <div className="header__content__container">
           <div className="header__circle1">

@@ -5,11 +5,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   /* font-family here... */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #080808;
+  overflow-x: hidden;
 }
 
 code {
