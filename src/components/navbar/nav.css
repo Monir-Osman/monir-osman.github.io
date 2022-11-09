@@ -10,6 +10,11 @@ nav {
   padding: 0 3vw;
   z-index: 1000;
 }
+
+.nav__background {
+  background-color: #1e1d1e;
+  transition: 0.3s;
+}
 .div__logo {
   color: whitesmoke;
 }

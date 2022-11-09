@@ -5,7 +5,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Bounce from "react-reveal/Bounce";
-import MobileNav from "./MobileNav/MobileNav";
 
 function Header() {
   const myH1 = useRef();

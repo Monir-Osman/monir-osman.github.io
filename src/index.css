@@ -5,6 +5,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #6e6a6d;
+  --bk-color: #1e1d1e;
+  --skill: rgb(0, 238, 255);
+}
 html {
   scroll-behavior: smooth;
 }

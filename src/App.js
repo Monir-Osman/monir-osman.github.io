@@ -1,10 +1,10 @@
 import "./App.css";
 import Header from "./components/Header/Header";
-import MobileNav from "./components/Header/MobileNav/MobileNav";
-import Nav from "./components/Header/navbar/Nav";
+import MobileNav from "./components/MobileNav/MobileNav";
+import Nav from "./components/navbar/Nav";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { useState } from "react";
 import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
 
 function App() {
   const matches = useMediaQuery("(min-width:700px)");
@@ -13,6 +13,7 @@ function App() {
       {matches ? <Nav /> : <MobileNav />}
       <Header />
       <About />
+      <Skills />
     </div>
   );
 }

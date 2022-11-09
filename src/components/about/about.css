@@ -1,7 +1,7 @@
 .about {
   width: 100vw;
   height: 100vh;
-  background-color: #1e1d1e;
+  background-color: var(--bk-color);
   display: flex;
   justify-content: center;
   align-items: flex-start;
