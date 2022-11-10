@@ -5,7 +5,6 @@ function Nav() {
   const [active, setActive] = useState(false);
 
   window.addEventListener("scroll", () => {
-    console.log(window.scrollY);
     if (window.scrollY > 240) {
       setActive(true);
     } else {

@@ -9,6 +9,8 @@
   --primary-color: #6e6a6d;
   --bk-color: #1e1d1e;
   --skill: rgb(0, 238, 255);
+  outline-color: rgb(45, 45, 45);
+  --orange-color: rgb(255, 149, 0);
 }
 html {
   scroll-behavior: smooth;

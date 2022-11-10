@@ -35,7 +35,9 @@
   display: flex;
   justify-content: flex-end;
 }
-
+.anime__container > img {
+  animation: movement 10s ease-in-out infinite both;
+}
 .parent__table {
   margin-left: 5vw;
 }
@@ -48,6 +50,7 @@
   border-radius: 10px;
   text-align: start;
   outline: 2px solid rgb(255, 149, 0);
+  animation: myLight 7s infinite backwards;
   /* outline: 2px solid var(--skill); */
   /* box-shadow: 0 0 30px rgba(19, 222, 244, 0.411); */
   box-shadow: 0 0 80px rgba(255, 149, 0, 0.342);
@@ -57,7 +60,8 @@
   font-size: 40px;
   font-family: "Ropa Sans", sans-serif;
   /* color: var(--skill); */
-  color: rgb(255, 149, 0);
+  color: var(--orange-color);
+  animation: myLight-p 7s infinite backwards;
 }
 .skills__table > p {
   font-family: "Roboto", sans-serif;
@@ -65,13 +69,15 @@
   opacity: 0.5;
   padding-bottom: 20px;
   /* color: var(--skill); */
-  color: rgb(255, 149, 0);
+  color: var(--orange-color);
+  animation: myLight-p 7s infinite backwards;
 }
 .skills__table > span {
   font-family: "Kalam", cursive, sans-serif;
   font-size: 1.5rem;
   /* color: var(--skill); */
-  color: rgb(255, 149, 0);
+  color: var(--orange-color);
+  animation: myLight-p 7s infinite backwards;
 }
 .skills__table > div.language {
   position: relative;
@@ -90,6 +96,7 @@
   animation: fillColor 3s;
   background-color: #f06529;
   background-color: rgba(255, 94, 0, 0.626);
+  animation: myLight-bar 7s infinite backwards;
 }
 .css::after {
   content: "";
@@ -98,6 +105,7 @@
   width: 85%;
   background-color: #2965f1;
   background-color: rgba(255, 94, 0, 0.626);
+  animation: myLight-bar 7s infinite backwards;
 }
 .javascript::after {
   content: "";
@@ -106,6 +114,7 @@
   width: 80%;
   background-color: #f0da4f;
   background-color: rgba(255, 94, 0, 0.626);
+  animation: myLight-bar 7s infinite backwards;
 }
 .react::after {
   content: "";
@@ -114,6 +123,7 @@
   width: 80%;
   background-color: #61dcfb;
   background-color: rgba(255, 94, 0, 0.626);
+  animation: myLight-bar 7s infinite backwards;
 }
 .git::after {
   content: "";
@@ -122,6 +132,7 @@
   width: 87%;
   background-color: #f34e29;
   background-color: rgba(255, 94, 0, 0.626);
+  animation: myLight-bar 7s infinite backwards;
 }
 @media (max-width: 700px) {
   .container {
@@ -133,7 +144,7 @@
   }
   .parent__table {
     margin-left: 0;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
   .anime__container {
     width: 80vw;
@@ -143,12 +154,12 @@
     /* align-items: center; */
   }
 }
-.skills__table {
-  background-size: 1600% 1600%;
-  transform-origin: 50% 50%;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-  animation: movement 20s ease-in-out infinite both;
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 @keyframes movement {
@@ -157,6 +168,101 @@
     transform: none;
   }
   50% {
-    transform: translateY(5%);
+    transform: translateY(2%);
+  }
+}
+
+@keyframes myLight {
+  0% {
+    outline: 2px solid rgb(45, 45, 45);
+    box-shadow: 0 0 80px rgba(21, 13, 2, 0.342);
+    background-color: #f0652900;
+  }
+  1% {
+    outline: 2px solid var(--orange-color);
+    box-shadow: 0 0 80px rgba(255, 149, 0, 0.342);
+    background-color: #f0652910;
+  }
+  2% {
+    outline: 2px solid rgb(45, 45, 45);
+    box-shadow: 0 0 80px rgba(21, 13, 2, 0.342);
+    background-color: #f0652900;
+  }
+  3% {
+    outline: 2px solid var(--orange-color);
+    box-shadow: 0 0 80px rgba(255, 149, 0, 0.342);
+    background-color: #f0652910;
+  }
+  49% {
+    outline: 2px solid var(--orange-color);
+    box-shadow: 0 0 80px rgba(255, 149, 0, 0.342);
+    background-color: #f0652910;
+  }
+  50% {
+    outline: 2px solid rgb(45, 45, 45);
+    box-shadow: 0 0 80px rgba(21, 13, 2, 0.342);
+    background-color: #f0652900;
+  }
+  51% {
+    outline: 2px solid var(--orange-color);
+    box-shadow: 0 0 80px rgba(255, 149, 0, 0.342);
+    background-color: #f0652910;
+  }
+  100% {
+    outline: 2px solid var(--orange-color);
+    box-shadow: 0 0 80px rgba(255, 149, 0, 0.342);
+    background-color: #f0652910;
+  }
+}
+@keyframes myLight-p {
+  0% {
+    color: rgb(45, 45, 45);
+  }
+  1% {
+    color: var(--orange-color);
+  }
+  5% {
+    color: rgb(45, 45, 45);
+  }
+  7% {
+    color: var(--orange-color);
+  }
+  65% {
+    color: var(--orange-color);
+  }
+  66% {
+    color: rgb(45, 45, 45);
+  }
+  67% {
+    color: var(--orange-color);
+  }
+  100% {
+    color: var(--orange-color);
+  }
+}
+@keyframes myLight-bar {
+  0% {
+    background-color: rgb(45, 45, 45);
+  }
+  1% {
+    background-color: var(--orange-color);
+  }
+  5% {
+    background-color: rgb(45, 45, 45);
+  }
+  7% {
+    background-color: var(--orange-color);
+  }
+  65% {
+    background-color: var(--orange-color);
+  }
+  66% {
+    background-color: rgb(45, 45, 45);
+  }
+  67% {
+    background-color: var(--orange-color);
+  }
+  100% {
+    background-color: var(--orange-color);
   }
 }
