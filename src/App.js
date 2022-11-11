@@ -5,6 +5,7 @@ import Nav from "./components/navbar/Nav";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
+import Works from "./components/Works/Works";
 
 function App() {
   const matches = useMediaQuery("(min-width:700px)");
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <About />
       <Skills />
+      {/* <Works /> */}
     </div>
   );
 }

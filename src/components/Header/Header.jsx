@@ -29,7 +29,7 @@ function Header() {
                 <div className="header__circle4">
                   <div className="header__circle5">
                     <div className="h1__con">
-                      <img src="/images/profile.jpg" alt="profile" />
+                      <img src="/images/me.jpg" alt="profile" />
                       <p>Front-end developer</p>
                       <h1 ref={myH1}>I'm Monir Osmani</h1>
                       <Bounce left>

@@ -1,0 +1,18 @@
+.work__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.h1__work__con > h1 {
+  color: white;
+}
+
+.link__con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

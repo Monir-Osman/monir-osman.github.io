@@ -24,6 +24,13 @@ function About() {
               Letraset sheets containing Lorem Ipsum passages.
             </p>
           </div>
+          <div className="contact__details">
+            <h2>Contact details</h2>
+            <p>Monir Osmani</p>
+            <p>Italy/Rome</p>
+            <p>+39 3791491965</p>
+            <p>ahmadmonirosmani@gmail.com</p>
+          </div>
         </div>
       </Fade>
     </section>

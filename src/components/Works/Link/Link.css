@@ -1,0 +1,10 @@
+.__card {
+  max-width: 330px;
+  height: 180px;
+  margin: 20px;
+}
+.__card > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
