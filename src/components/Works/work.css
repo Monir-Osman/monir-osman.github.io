@@ -3,11 +3,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 40px;
+  padding: 90px 20px;
 }
 
 .h1__work__con > h1 {
-  color: white;
+  color: #c5c1c5;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 40px;
 }
 
 .link__con {

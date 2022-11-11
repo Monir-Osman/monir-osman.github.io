@@ -1,10 +1,35 @@
 .__card {
-  max-width: 330px;
+  max-width: 350px;
   height: 180px;
   margin: 20px;
+  position: relative;
+}
+.__card > a {
+  text-decoration: none;
+  color: #eee;
+  font-family: "Roboto", sans-serif;
 }
 .__card > a > img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.826);
+  transition: 0.3s all;
+  opacity: 0;
+}
+.overlay:hover {
+  opacity: 1;
+  transition: 0.3s;
 }

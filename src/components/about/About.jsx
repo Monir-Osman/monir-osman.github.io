@@ -12,7 +12,7 @@ function About() {
       </Fade>
 
       <Fade right>
-        <div className="text__container">
+        <div className="text__container row">
           <h1>About me</h1>
           <div className="my__text">
             <p>
