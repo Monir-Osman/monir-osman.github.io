@@ -6,6 +6,8 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Works from "./components/Works/Works";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const matches = useMediaQuery("(min-width:700px)");
@@ -16,6 +18,8 @@ function App() {
       <About />
       <Skills />
       <Works />
+      <Contact />
+      <Footer />
     </div>
   );
 }

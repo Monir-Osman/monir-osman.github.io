@@ -39,7 +39,7 @@
   justify-content: flex-end;
 }
 .anime__container > img {
-  animation: movement 10s ease-in-out infinite both;
+  animation: movement 8s ease-in-out infinite both;
 }
 .parent__table {
   margin-left: 5vw;
@@ -168,7 +168,7 @@
     transform: none;
   }
   50% {
-    transform: translateY(2%);
+    transform: translateY(3%);
   }
 }
 

@@ -1,0 +1,43 @@
+.contact__con {
+  background-color: #191919;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.contact__chi__con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact__chi__con > h1 {
+  color: #717071;
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact__chi__con > p {
+  color: #717071;
+
+  padding-top: 30px;
+  padding-bottom: 40px;
+  max-width: 600px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.contact__chi__con > a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #ff6f00;
+  color: black;
+  border-radius: 5px;
+  font-family: "Kalam", cursive, sans-serif;
+  transition: 0.3s;
+}
+.contact__chi__con > a:hover {
+  background-color: #ffae00;
+}
