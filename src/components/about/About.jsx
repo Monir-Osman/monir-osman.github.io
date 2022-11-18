@@ -10,12 +10,22 @@ function About() {
           <h1>About me</h1>
           <div className="my__text">
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s, when an unknown
-              printer took a galley of type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged. It was popularised in the 1960s with the release of
-              Letraset sheets containing Lorem Ipsum passages.
+              Hi there, my name is Monir! I am a front-end developer, I have been coding for the
+              past couple of months. I started learning coding by myself and then I also took a
+              bootcamp by{" "}
+              <a
+                href="https://powercoders.org/"
+                target="_blank"
+                rel="noreferrer"
+                title="powercoders.org"
+              >
+                POWERCODERS
+              </a>{" "}
+              which that took me to another level of experty. Along the journey I realised that the
+              best way to develop my coding skills is by building the REAL WORLD projects,that took
+              me to start cloning my favorite apps. The best thing in programming is problem solving
+              and the world of creativity and how to apply these skills in a range of cool builds
+              and this is why I'm fall in love with coding.
             </p>
           </div>
           <div className="contact__details">
