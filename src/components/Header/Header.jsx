@@ -35,17 +35,29 @@ function Header() {
                       <Bounce left>
                         <ul>
                           <li>
-                            <a href="https://github.com/Monir-Osman">
+                            <a
+                              href="https://github.com/Monir-Osman"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               <GitHubIcon className="icon" />
                             </a>
                           </li>
                           <li>
-                            <a href="https://www.linkedin.com/in/ahmad-monir-osmani-03b148240/">
+                            <a
+                              href="https://www.linkedin.com/in/ahmad-monir-osmani-03b148240/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               <LinkedInIcon className="icon" />
                             </a>
                           </li>
                           <li>
-                            <a href="https://twitter.com/Monir1Osmani">
+                            <a
+                              href="https://twitter.com/Monir1Osmani"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               <TwitterIcon className="icon" />
                             </a>
                           </li>
