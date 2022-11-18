@@ -45,11 +45,27 @@ footer > p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
-footer > p > span {
-  font-size: 16px;
+.copyright {
+  padding: 50px 0px 20px 0px;
 }
-footer > p > span:hover {
-  color: white;
+.copyright > p {
+  color: rgb(230, 230, 230);
+  opacity: 0.3;
+  display: inline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.copyright > span {
+  color: rgb(140, 140, 140);
+  font-family: "Roboto", sans-serif;
+  padding-left: 5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: 0.2s;
+}
+.copyright > span:hover {
+  color: #ffffff;
+  transition: 0.2s;
 }
 footer > p:hover {
   opacity: 1;
@@ -63,6 +79,5 @@ footer > p:hover {
   footer > ul > li > a {
     text-decoration: none;
     font-size: 20px;
-    color: #b9fff8;
   }
 }

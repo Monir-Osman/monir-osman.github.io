@@ -1,8 +1,12 @@
+#contact {
+  position: relative;
+}
 .contact__con {
   background-color: #191919;
   width: 100%;
   padding-top: 100px;
   padding-bottom: 120px;
+  padding: 100px 20px 120px;
 }
 
 .contact__chi__con {
@@ -40,4 +44,23 @@
 }
 .contact__chi__con > a:hover {
   background-color: #ffae00;
+}
+.contact__con > img {
+  object-fit: contain;
+  color: orange;
+}
+
+hr {
+  position: absolute;
+  top: 0;
+  left: 46%;
+  width: 6rem;
+  border-style: none;
+  border-bottom: 10px dotted rgba(48, 48, 48, 0.427);
+  margin: auto;
+}
+@media (max-width: 500px) {
+  hr {
+    left: 40%;
+  }
 }

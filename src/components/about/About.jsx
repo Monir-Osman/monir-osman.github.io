@@ -5,13 +5,7 @@ import Fade from "react-reveal/Fade";
 function About() {
   return (
     <section id="about" className="about">
-      <Fade left>
-        <div className="img__container">
-          <img src="/images/image2.jpg" alt="monir img" />
-        </div>
-      </Fade>
-
-      <Fade right>
+      <Fade bottom>
         <div className="text__container row">
           <h1>About me</h1>
           <div className="my__text">

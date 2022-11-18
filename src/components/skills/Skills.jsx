@@ -62,7 +62,7 @@ function Skills() {
               <span>Javascript</span>
               <div className="javascript language"></div>
 
-              <span>React</span>
+              <span>ReactJS</span>
               <div className="react language"></div>
 
               <span>Git&GitHub</span>
