@@ -48,15 +48,6 @@ function Works() {
               buildWith="Slack-clone (ReactJS)"
             />
           </Fade>
-
-          <Fade bottom>
-            <Link
-              pageLink={"https://monir-osman.github.io/profile/"}
-              imgSrc={"/images/portfolio.jpg"}
-              alt={"Portfolio"}
-              buildWith={"Personal Website (Html, Css, JS)"}
-            />
-          </Fade>
         </div>
       </div>
     </section>
