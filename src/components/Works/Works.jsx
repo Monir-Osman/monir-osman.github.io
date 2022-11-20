@@ -48,6 +48,14 @@ function Works() {
               buildWith="Slack-clone (ReactJS)"
             />
           </Fade>
+          <Fade bottom>
+            <Link
+              pageLink={"https://tesla-clone-84fa3.web.app/"}
+              imgSrc={"/images/tesla.jpg"}
+              alt={"tesla-clone"}
+              buildWith="Tesla-clone (ReactJS)"
+            />
+          </Fade>
         </div>
       </div>
     </section>
