@@ -56,6 +56,14 @@ function Works() {
               buildWith="Tesla-clone (ReactJS)"
             />
           </Fade>
+          <Fade bottom>
+            <Link
+              pageLink={"https://disney-plus-clone-f4849.web.app/"}
+              imgSrc={"/images/disney.jpg"}
+              alt={"disney-clone"}
+              buildWith="Disney-Plas-clone (ReactJS)"
+            />
+          </Fade>
         </div>
       </div>
     </section>
