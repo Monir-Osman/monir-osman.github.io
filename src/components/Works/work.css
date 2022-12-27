@@ -1,0 +1,21 @@
+.work__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 90px 20px;
+  background-color: #191919;
+}
+
+.h1__work__con > h1 {
+  color: #c5c1c5;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 40px;
+}
+
+.link__con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
